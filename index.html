@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lyrics Finder</title>
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>Lyrics Finder</h1>
+				<div class="theme-toggle">
+					<button id="theme-btn">🌙</button>
+				</div>
+			</header>
+
+			<div class="search-container">
+				<input
+					type="text"
+					id="search-input"
+					placeholder="Search for a song or artist..."
+				/>
+				<button id="search-btn">Search</button>
+			</div>
+
+			<!-- Results Container -->
+			<div class="results-container" id="results-container"></div>
+
+			<!-- Single Song View -->
+			<div
+				class="single-song-view"
+				id="single-song-view"
+				style="display: none"
+			>
+				<button id="back-btn">← Back to Results</button>
+				<div id="song-details"></div>
+			</div>
+
+			<!-- Favorites Section -->
+			<div class="favorites-container">
+				<h2>Favorites</h2>
+				<ul id="favorites-list"></ul>
+			</div>
+		</div>
+
+        <!-- Script JS -->
+		<script src="./script.js"></script>
+	</body>
+</html>
